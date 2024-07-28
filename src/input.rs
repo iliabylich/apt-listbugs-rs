@@ -21,6 +21,8 @@ pub(crate) fn get_input() -> Result<Vec<String>, AppError> {
     f.read_to_string(&mut contents)
         .map_err(|_| AppError::CantReadFromAptHook)?;
 
+    log!("APT_HOOK_INFO contents: {}", contents);
+
     let (_configurations, packages) = contents
         .split_once("\n\n")
         .ok_or(AppError::NoNewlineBetweenAptHookParts)?;
@@ -43,6 +45,8 @@ pub(crate) fn get_input() -> Result<Vec<String>, AppError> {
 
         set.insert(package_name.to_string());
     }
+
+    log!("Working packages: {:?}", set);
 
     Ok(set.into_iter().collect())
 }

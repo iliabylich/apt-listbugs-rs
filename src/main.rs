@@ -15,6 +15,10 @@ fn main() {
 
 fn try_main() -> Result<(), AppError> {
     let packages_list = get_input()?;
+    if packages_list.is_empty() {
+        println!("No packages to check bugs for!");
+        std::process::exit(0);
+    }
     println!("Checking packages {}", packages_list.join(" "));
 
     let bug_numbers = get_bugs(packages_list)?;

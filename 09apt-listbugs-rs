@@ -1,0 +1,4 @@
+DPkg::Pre-Install-Pkgs {"/usr/bin/apt-listbugs-rs";};
+DPkg::Tools::Options::/usr/bin/apt-listbugs-rs "";
+DPkg::Tools::Options::/usr/bin/apt-listbugs-rs::Version "3";
+DPkg::Tools::Options::/usr/bin/apt-listbugs-rs::InfoFD "20";

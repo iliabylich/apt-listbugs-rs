@@ -9,3 +9,28 @@ fake-package-list = []
 [dependencies]
 ureq = { default-features = false, features = [], version = "2.10.0" }
 xml-rs = "0.8.20"
+
+[profile.release]
+opt-level = "z"
+lto = true
+
+[package.metadata.deb]
+assets = [
+  [
+    "target/release/apt-listbugs-rs",
+    "usr/bin/apt-listbugs-rs",
+    "755",
+  ],
+  [
+    "09apt-listbugs-rs",
+    "etc/apt/apt.conf.d/09apt-listbugs-rs",
+    "644",
+  ],
+]
+copyright = "2023, Ilya Bylich."
+depends = "$auto"
+extended-description = "Zero-dependency alternative to apt-listbugs."
+maintainer = "apt-listbugs-rs developer <ibylich@gmail.com>"
+maintainer-scripts = "debian/scripts"
+priority = "optional"
+section = "admin"
