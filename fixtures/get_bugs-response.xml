@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Body>
+        <get_bugsResponse xmlns="http://www.dataaccess.com/webservicesserver/">
+            <soapenc:Array soapenc:arrayType="xsd:int[1]" xsi:type="soapenc:Array">
+                <item xsi:type="xsd:int">1073508</item>
+            </soapenc:Array>
+        </get_bugsResponse>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope soap:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:apachens="http://xml.apache.org/xml-soap" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Body>
+        <get_statusResponse xmlns="http://www.dataaccess.com/webservicesserver/">
+            <s-gensym3 xsi:type="apachens:Map">
+                <item>
+                    <key xsi:type="xsd:int">1073508</key>
+                    <value>
+                        <date xsi:type="xsd:int">1718542653</date>
+                        <summary xsi:type="xsd:string" />
+                        <originator xsi:type="xsd:string">Lucas Nussbaum &lt;lucas@debian.org&gt;</originator>
+                        <id xsi:type="xsd:int">1073508</id>
+                        <severity xsi:type="xsd:string">serious</severity>
+                        <subject xsi:type="xsd:string">libxml2: just another API+ABI break; please bump soname</subject>
+                        <source xsi:type="xsd:string">libxml2</source>
+                        <forwarded xsi:type="xsd:string" />
+                        <msgid xsi:type="xsd:string">&lt;Zm7f7uTLjFX-cx9P@grub.nussbaum.fr&gt;</msgid>
+                        <found_date soapenc:arrayType="xsd:anyType[0]" xsi:type="soapenc:Array" />
+                        <log_modified xsi:type="xsd:int">1721732589</log_modified>
+                        <blocks xsi:type="xsd:string">1073425 1073470 1074153 1074338</blocks>
+                        <fixed />
+                        <fixed_versions soapenc:arrayType="xsd:anyType[0]" xsi:type="soapenc:Array" />
+                        <last_modified xsi:type="xsd:int">1721732589</last_modified>
+                        <affects xsi:type="xsd:string" />
+                        <found_versions soapenc:arrayType="xsd:string[1]" xsi:type="soapenc:Array">
+                            <item xsi:type="xsd:string">libxml2/2.12.7+dfsg-3</item>
+                        </found_versions>
+                        <found xsi:type="apachens:Map">
+                            <item>
+                                <key xsi:type="xsd:string">libxml2/2.12.7+dfsg-3</key>
+                                <value xsi:type="xsd:string" />
+                            </item>
+                        </found>
+                        <location xsi:type="xsd:string">db-h</location>
+                        <mergedwith xsi:type="xsd:string" />
+                        <blockedby xsi:type="xsd:string" />
+                        <fixed_date soapenc:arrayType="xsd:anyType[0]" xsi:type="soapenc:Array" />
+                        <package xsi:type="xsd:string">libxml2</package>
+                        <owner xsi:type="xsd:string" />
+                        <tags xsi:type="xsd:string">ftbfs</tags>
+                        <archived xsi:type="xsd:int">0</archived>
+                        <unarchived xsi:type="xsd:string" />
+                        <bug_num xsi:type="xsd:int">1073508</bug_num>
+                        <keywords xsi:type="xsd:string">ftbfs</keywords>
+                        <outlook xsi:type="xsd:string" />
+                        <done xsi:type="xsd:string" />
+                        <pending xsi:type="xsd:string">pending</pending>
+                    </value>
+                </item>
+            </s-gensym3>
+        </get_statusResponse>
+    </soap:Body>
+</soap:Envelope>

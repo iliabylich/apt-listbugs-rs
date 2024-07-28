@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <get_bugs xmlns="http://www.dataaccess.com/webservicesserver/">
+      <key>severity</key>
+      <value>critical</value>
+      <key>severity</key>
+      <value>grave</value>
+      <key>severity</key>
+      <value>serious</value>
+      <!--  -->
+      <key>status</key>
+      <value>forwarded</value>
+      <key>status</key>
+      <value>open</value>
+      <!--  -->
+      <key>package</key>
+      <value>libxml2</value>
+      <key>package</key>
+      <value>sccache</value>
+    </get_bugs>
+  </soap:Body>
+</soap:Envelope>

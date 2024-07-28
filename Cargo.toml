@@ -1,0 +1,11 @@
+[package]
+name = "apt-listbugs-rs"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+fake-package-list = []
+
+[dependencies]
+ureq = { default-features = false, features = [], version = "2.10.0" }
+xml-rs = "0.8.20"
