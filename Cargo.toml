@@ -8,7 +8,7 @@ fake-package-list = []
 
 [dependencies]
 ureq = { default-features = false, features = [], version = "2.10.0" }
-xml-rs = "0.8.20"
+xml-rs = "0.8.21"
 
 [profile.release]
 opt-level = "z"
